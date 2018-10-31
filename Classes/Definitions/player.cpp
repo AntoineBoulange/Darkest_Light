@@ -12,8 +12,8 @@ player::player(): _hunger{MAX_HUNGER},
                   _forward{true},
                   _reduction{false},
                   _timer{0},
-                  _height{0},
-                  _width{0},
+                  _height{100},
+                  _width{50},
                   _status{0}
 {}
 
@@ -140,4 +140,20 @@ const position &player::get_mvt() const {
 void player::set_mvt(int x, int y) {
     this->_mvt.set_x(x);
     this->_mvt.set_y(y);
+}
+
+int player::get_height() const {
+    return this->_height;
+}
+
+void player::set_height(int height) {
+    this->_height = height;
+}
+
+int player::get_width() const {
+    return this->_width;
+}
+
+void player::set_width(int width) {
+    this->_width = width;
 }

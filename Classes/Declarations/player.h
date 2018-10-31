@@ -40,11 +40,15 @@ public:
     const position &get_pos() const;
     int get_life() const;
     const position &get_mvt() const;
+    int get_height() const;
+    int get_width() const;
 
     // Setter
     void set_pos(int x, int y);
     void set_mvt(int x, int y);
     void set_life(int life);
+    void set_width(int width);
+    void set_height(int height);
 };
 
 
